@@ -18,12 +18,14 @@ import global from "@/global/global";
 const app = createApp(App)
 
 app.use($)
-app.config.globalProperties.$http=axios
+app.config.globalProperties.$http=axios.create({
+    headers:{
+        'Access-Control-Allow-Origin': '*',
+    }
+})
 app.provide('globalProp',{
     global
 })
 app.use(router)
-
-
 
 app.mount('#app')

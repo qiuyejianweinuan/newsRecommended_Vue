@@ -14,18 +14,19 @@ export default {
   },
   methods: {},
   mounted() {
-    this.$http.get('https://api.ipify.org?format=json').then((res) => {
-      console.log(res.data.ip)
-      this.$http.get('http://int.dpool.sina.com.cn/iplookup/iplookup.php', {
-        params:{
-          ip:res.data.ip
-        },
-      }).then((res) => {
-        console.log(res.data)
-      }).catch((error) => {
-        console.log(error)
-      })
-    })
+
+    // this.$http.get('https://api.ipify.org?format=json').then((res) => {
+    //   console.log(res.data.ip)
+    //   this.$http.get('http://int.dpool.sina.com.cn/iplookup/iplookup.php', {
+    //     params:{
+    //       ip:res.data.ip
+    //     },
+    //   }).then((res) => {
+    //     console.log(res.data)
+    //   }).catch((error) => {
+    //     console.log(error)
+    //   })
+    // })
 
 
     // console.log(this.userInfo)

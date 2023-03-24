@@ -17,7 +17,7 @@
             <!-- Avatar -->
             <div class="avatar avatar-xs me-2">
               <!--                            tou1 jquery赋值src-->
-              <img class="tou1 avatar-img rounded-circle " src="src/assets/photo/faker.jpg" alt="e">
+              <img class="tou1 avatar-img rounded-circle " src="/src/assets/photo/faker.jpg" alt="e">
             </div>
             <!-- Feed box  -->
             <form class="container">
@@ -66,6 +66,7 @@
 export default {
   name: "SendBlog"
 }
+
 </script>
 
 <style scoped>

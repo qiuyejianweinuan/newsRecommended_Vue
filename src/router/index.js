@@ -1,4 +1,6 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHistory} from "vue-router";
+
+
 import HomeView from '../views/HomeView.vue'
 import Example from '../views/Example.vue'
 import Test from '../views/test1.vue'
@@ -8,6 +10,7 @@ import Register from "@/views/Register.vue";
 import NewsInfo from "@/views/NewsInfo.vue";
 import userLogin from "@/views/common/UserLogin.vue";
 import userCenter from "@/views/user/userCenter.vue";
+import callback from "@/views/common/callback.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +42,11 @@ const router = createRouter({
             name: 'newsInfo',
             component: NewsInfo,
             meta: { transition: 'slide-left' },
+        },
+        {
+            path: '/callback',
+            name: 'callback',
+            component: callback,
         },
         {
             path: '/CKEditor',
